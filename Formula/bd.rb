@@ -26,6 +26,9 @@ class Bd < Formula
 
   def install
     bin.install "bd"
+
+    # Install shell completions
+    generate_completions_from_executable(bin/"bd", "completion")
   end
 
   test do
