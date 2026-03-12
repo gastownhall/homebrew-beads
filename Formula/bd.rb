@@ -5,21 +5,21 @@
 class Bd < Formula
   desc "AI-supervised issue tracker for coding workflows"
   homepage "https://github.com/steveyegge/beads"
-  version "0.59.0"
+  version "0.60.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/steveyegge/beads/releases/download/v0.59.0/beads_0.59.0_darwin_amd64.tar.gz"
-      sha256 "8efa15f831222bd43ec7ab23018919e161927f993b6845828cb595f34ab85778"
+      url "https://github.com/steveyegge/beads/releases/download/v0.60.0/beads_0.60.0_darwin_amd64.tar.gz"
+      sha256 "fa21a9d3ec57b090c52fab0e5c46898f7949f99e0c665e0aeae1074a92f4f483"
 
       define_method(:install) do
         bin.install "bd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/steveyegge/beads/releases/download/v0.59.0/beads_0.59.0_darwin_arm64.tar.gz"
-      sha256 "b65e07343275783b669f92b592ddde8234594cfc3027637dc44facfd01c87a47"
+      url "https://github.com/steveyegge/beads/releases/download/v0.60.0/beads_0.60.0_darwin_arm64.tar.gz"
+      sha256 "e49ee734b5bad1beae115e6f2c96a14c33bac1a39872c25ec56c6140bdf3ecc1"
 
       define_method(:install) do
         bin.install "bd"
@@ -29,15 +29,15 @@ class Bd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/steveyegge/beads/releases/download/v0.59.0/beads_0.59.0_linux_amd64.tar.gz"
-      sha256 "d4395c4d3ab6312c50f8c3db4eeb97a357aec6716354a2c9318de3f33350702f"
+      url "https://github.com/steveyegge/beads/releases/download/v0.60.0/beads_0.60.0_linux_amd64.tar.gz"
+      sha256 "6b9f332365d3d4fc501ba288b92fffedb6dc28788e832ad4a7ed28baf899cf18"
       define_method(:install) do
         bin.install "bd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/steveyegge/beads/releases/download/v0.59.0/beads_0.59.0_linux_arm64.tar.gz"
-      sha256 "3be77b876d71bb7dd6bf2bd556f3b797152f91e1da7e25db196566b3da48b59f"
+      url "https://github.com/steveyegge/beads/releases/download/v0.60.0/beads_0.60.0_linux_arm64.tar.gz"
+      sha256 "9141696cf8cc74926a0bf8b46eac1ccc831421c617451a7cb8c373d5dca5d2ef"
       define_method(:install) do
         bin.install "bd"
       end
