@@ -4,26 +4,26 @@
 class Bd < Formula
   desc "AI-supervised issue tracker for coding workflows"
   homepage "https://github.com/gastownhall/beads"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gastownhall/beads/releases/download/v1.0.2/beads_1.0.2_darwin_arm64.tar.gz"
-      sha256 "f3b27edd4ed43ce8aa792837145f324e4b8a3cbf9dc0c81d144682da46189038"
+      url "https://github.com/gastownhall/beads/releases/download/v1.0.3/beads_1.0.3_darwin_arm64.tar.gz"
+      sha256 "fe6e4465751f46d9f3a670c3cf656714a171e44c8bc318fe19054f513b8306ed"
     else
-      url "https://github.com/gastownhall/beads/releases/download/v1.0.2/beads_1.0.2_darwin_amd64.tar.gz"
-      sha256 "7d9de37b544ecc55ccc798da6778051344dba839834943957942f38412d7a13a"
+      url "https://github.com/gastownhall/beads/releases/download/v1.0.3/beads_1.0.3_darwin_amd64.tar.gz"
+      sha256 "6bd75ac056288a5e8bbb203750e95af5a441d5ad1d20ca5511e60cd6c813e54b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/gastownhall/beads/releases/download/v1.0.2/beads_1.0.2_linux_arm64.tar.gz"
-      sha256 "f7b60c2398305bdb18d4ece1c84b87951e5bbcd6966fa0d607ac16f9d6e11a4d"
+      url "https://github.com/gastownhall/beads/releases/download/v1.0.3/beads_1.0.3_linux_arm64.tar.gz"
+      sha256 "243a9c75012e794888fcafb957e7624b8fefdfef033d14cd03ebc9831c3bc12f"
     else
-      url "https://github.com/gastownhall/beads/releases/download/v1.0.2/beads_1.0.2_linux_amd64.tar.gz"
-      sha256 "66280bca14581218684027fee000810c2e40a9c6fe00e876ff64bdcb01a036c0"
+      url "https://github.com/gastownhall/beads/releases/download/v1.0.3/beads_1.0.3_linux_amd64.tar.gz"
+      sha256 "1ef5dca818d7e81574df9e9f9fc2a16ab711da09b0fa7b822ae162d9a81c8912"
     end
   end
 
